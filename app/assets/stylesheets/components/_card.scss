@@ -1,0 +1,99 @@
+/* Your card CSS code here */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards .card{
+  flex: 1 1 auto;
+  width: 30%;
+  box-sizing: border-box;
+  margin: 15px;
+  transition: all 0.3s ease;
+}
+
+.card:hover{
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+
+}
+
+.card-body {
+  height: 200px;
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), asset-url('cocktail1.jpg');
+  background-size: cover;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.card-description {
+  padding: 5px;
+  position: absolute;
+  bottom: 70px;
+  font-size: 25px;
+}
+
+.card-user {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.card-user h2{
+  font-size: 15px;
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: black;
+  opacity: 0;
+}
+
+.card-link:hover {
+  opacity: 0.4;
+}
+
+.card-footer {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card-footer p{
+  font-weight: lighter;
+  color: rgb(150, 150, 150);
+  font-size: 13px;
+}
+
+.card-footer .controls {
+  display: flex;
+  align-items: center;
+}
+
+.card-footer .controls i{
+  color: black;
+  opacity: 0.2;
+  padding: 0 8px;
+}
+
+.card-footer .controls i:hover {
+  opacity: 0.5;
+}
+

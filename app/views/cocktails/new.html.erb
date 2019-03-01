@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>New cocktail</h1>
+
+  <%= render 'form', cocktail: @cocktail %>
+
+  <%= link_to cocktails_path do %>
+    <i class="fas fa-undo-alt"></i> Back to list
+    <% end %>
+</div>
