@@ -35,7 +35,6 @@ gem 'cloudinary', '~> 1.9.1'
 
 gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
-gem 'carrierwave', '~> 1.0'
 gem 'cloudinary', '~> 1.9.1'
 
 # Use ActiveStorage variant
